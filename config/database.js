@@ -1,4 +1,4 @@
 module.exports = {
   'secret': 'expressapitest',
-  'dbConnection': 'mongodb://rony:rony123@localhost:27017/rider'
+  'dbConnection': 'mongodb://shakil:1234@localhost:27017/apptacore'
 }

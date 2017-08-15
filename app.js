@@ -13,6 +13,7 @@ var users = require('./routes/users');
 var products = require('./routes/products');
 var protects = require('./middleware/protects');
 var books = require('./routes/books');
+var customers = require('./routes/customers');
 
 var app = express();
 var swaggerJsDoc = require('swagger-jsdoc');
@@ -61,6 +62,7 @@ app.use('/', index);
  app.use('/users', users);
  app.use('/api', protects);
  app.use('/api/products', products);
+ app.use('/customers', customers);
 
 //catch 404 and forward to error handler
 app.use(function(req, res, next) {
